@@ -17,6 +17,19 @@ To use the modified firmware, you need to:
 - Make sure your memory card is formatted as ExFAT, as the FAT32 filesystem does not support files over 4GB in size.
 - The main feature of this MFW is that it restores autoexec.sh functionality.
 
+## Modifications to the original firmware
+
+After *someone* published the autoexec.sh trick that we used to pull off those mods, Samsung removed the four main parts that were needed for that trick.
+
+The first thing that was known: limbisc.so. This is a library in the OS and it was the one that called the autoexec.sh in the first place. Samsung decided to get rid of that part. So I replaced the limbic.so in the 1.15 with the one from the 1.10.
+
+The second thing I noticed was that telnet was not working. So, thanks to [ge0rg](https://github.com/ge0rg), I found out that it was part of busybox. Samsung decided to get rid of that part. So I replaced it: Aaaaand nothing. It turns out that telnetd and ftpd are part of busybox and are called via symlinks in /usr/sbin. And Samsung removed those too. I decided to recreate them, but that was not possible for some reason. So I copied the 1.10 busybox there three times, and renamed them to telnetd, ftpd and chroot respectively.
+
+#### TL:DR
+
+- libmisc.so and busybox were replaced with the versions from the 1.10 firmware
+- the missing telnetd, ftpd, and chroot symlinks were replaced with equally renamed busybox binaries.
+
 ## Disclaimer
 
 This firmware is provided as-is, without any warranty or guarantee. Use it at your own risk. I am not responsible for any damage or loss that may occur as a result of using this firmware.
