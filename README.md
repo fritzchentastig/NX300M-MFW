@@ -30,6 +30,26 @@ The second thing I noticed was that telnet was not working. So, thanks to [ge0rg
 - libmisc.so and busybox were replaced with the versions from the 1.10 firmware
 - the missing telnetd, ftpd, and chroot symlinks were replaced with equally renamed busybox binaries.
 
+## A word about compatibility 
+
+This software aims to make the NX300M as compatible as possible with existing NX300 hacks. This is not that difficult, except for one thing: WiFi. The method used in the remote controller mod no longer works in this camera. So, thanks to [this](https://languagetool.org/de) article, I found a solution. This solution will be published soon™. Until then, refer to this article to enable always-on WiFi.
+
+## A word about the future
+
+The main goal of this project has been fulfilled. 
+However, another branch of this project will be used to hopefully create new mods for the NX300 family, such as a button interface to start the local AP or the remote mod. Please refer to the project’s page regarding that.
+
+## A word about help
+
+I welcome and appreciate any ideas or suggestions that can improve our project. If you have an idea, please share it with us by using one of the following methods:
+
+- Commit your idea to a branch in your fork of the repository.
+- Write an issue with the feature request tag, describing your idea and why it is useful or needed. Include any relevant screenshots, mockups, or examples.
+- Write a pull request, linking it to the issue you created. Explain what your code does and how it works.
+- Comment on other issues or pull requests that are related to your idea. Provide constructive feedback, ask questions, or offer support.
+
+By following these steps, you can help us review and evaluate your idea faster and easier. Thank you for your interest and contribution to our project. 😊
+
 ## Disclaimer
 
 This firmware is provided as-is, without any warranty or guarantee. Use it at your own risk. I am not responsible for any damage or loss that may occur as a result of using this firmware.
