@@ -6,7 +6,7 @@ This project is a modified firmware for the Samsung NX300M camera that makes it 
 
 To install this firmware, you need to:
 
-- Download the firmware file (NX300M.bin) from this repository and copy it to the root directory of the SD card.
+- Download the firmware file (NX300M.bin) from the "Releases" section of this repository and copy it to the root directory of the SD card.
 - Insert the SD card into the camera, power on the device, go to Menu > Setting > Device Information > Firmware Update > Body Firmware Update, and agree with the next message that will initiate the upgrade.
 - Wait for the camera to reboot and verify that the firmware version is 1.15.
 
