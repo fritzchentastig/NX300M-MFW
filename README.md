@@ -32,7 +32,7 @@ The second thing I noticed was that telnet was not working. So, thanks to [ge0rg
 
 ## A word about compatibility 
 
-This software aims to make the NX300M as compatible as possible with existing NX300 hacks. This is not that difficult, except for one thing: WiFi. The method used in the remote controller mod no longer works in this camera. So, thanks to [this](https://languagetool.org/de) article, I found a solution. This solution will be published soon™. Until then, refer to this article to enable always-on WiFi.
+This software aims to make the NX300M as compatible as possible with existing NX300 hacks. This is not that difficult, except for one thing: WiFi. The method used in the remote controller mod no longer works in this camera. So, thanks to [this article](https://lemmster.de/auto-backup-from-nx300-via-ftp.html), I found a solution. This solution will be published soon™. Until then, refer to this article to enable always-on WiFi.
 
 ## A word about the future
 
